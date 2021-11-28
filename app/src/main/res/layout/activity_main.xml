@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:background="#FEFEFE"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/icon_home"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_home_klik"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_pinjaman"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/icon_pinjaman"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_list"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_pinjaman_verify"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/icon_pinjaman_verify"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_list_verify"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/icon_akun"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_account"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

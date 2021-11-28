@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.DetailBukuActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/text_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Buku"
+            android:textSize="@dimen/text_size_17"
+            android:textColor="#FFF"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_13"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/konten_1"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar_area"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        app:cardElevation="@dimen/dp_7"
+        app:cardCornerRadius="@dimen/dp_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:padding="@dimen/dp_10">
+
+                <ImageView
+                    android:id="@+id/img_buku"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_150"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_judul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="judul"
+                        android:textAllCaps="true"
+                        android:maxLines="2"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_14"/>
+
+                    <TextView
+                        android:id="@+id/text_judul_buku"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="judul"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:textColor="#333"
+                        android:textSize="@dimen/text_size_14"/>
+
+                    <TextView
+                        android:id="@+id/text_pengarang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pengarang"
+                        android:textAllCaps="true"
+                        android:maxLines="2"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_14"/>
+
+                    <TextView
+                        android:id="@+id/text_pengarang_buku"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pengarang"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:textColor="#333"
+                        android:textSize="@dimen/text_size_14"/>
+
+                    <TextView
+                        android:id="@+id/text_jenis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="jenis"
+                        android:textAllCaps="true"
+                        android:maxLines="2"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_14"/>
+
+                    <TextView
+                        android:id="@+id/text_jenis_buku"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="jenis"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:textColor="#333"
+                        android:textSize="@dimen/text_size_14"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="#ddd"/>
+
+            <TextView
+                android:id="@+id/text_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="deskripsi"
+                android:textAllCaps="true"
+                android:maxLines="2"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:id="@+id/text_desc_buku"
+                android:layout_width="@dimen/dp_320"
+                android:layout_height="wrap_content"
+                android:text="desc"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:textColor="#333"
+                android:textSize="@dimen/text_size_14"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="#ddd"/>
+
+            <TextView
+                android:id="@+id/text_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="status"
+                android:textAllCaps="true"
+                android:maxLines="2"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:id="@+id/text_status_buku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tersedia"
+                android:textStyle="italic"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:textColor="#378c18"
+                android:textSize="@dimen/text_size_14"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/btn_edit_buku"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_below="@id/konten_1"
+        android:gravity="center"
+        android:background="@drawable/bg_btn_blue"
+        android:text="Edit Buku"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_17"
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/btn_hapus_buku"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_below="@id/btn_edit_buku"
+        android:gravity="center"
+        android:background="@drawable/bg_btn_red"
+        android:text="Hapus Buku"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_17"
+        android:textColor="#FFF"/>
+
+</RelativeLayout>
